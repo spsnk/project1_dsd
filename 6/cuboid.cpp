@@ -14,5 +14,8 @@ Cuboid::Cuboid ( Coordinate a, Coordinate b )
   front = Rectangle ( Coordinate(x2, y1, z1), Coordinate(x2,y2,z2) );
 
   bottom = Rectangle ( Coordinate(x1,y1,z1), Coordinate(x2,y2,z1) );
-  top = Rectangle ( Coordinate(x1,y1,z2), Coordinate(
+  top = Rectangle ( Coordinate(x1,y1,z2), Coordinate(x2,y2,z2) );
+  
+  left = Rectangle ( Coordinate(x1,y1,z1), Coordinate(x1,y1,z2) );
+  right = Rectangle ( Coordinate(x1,y1,z1), Coordinate(x2,y2,z1) );
 } 
